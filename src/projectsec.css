@@ -1,0 +1,86 @@
+.Projectsection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* margin-top: 5rem; */
+    padding:0 4rem;
+    column-gap: 7rem;
+    row-gap: 7rem;
+    background: linear-gradient(rgba(182,229,255,0),#210e0e ,#0f1e20 ,rgba(182,229,255,0));
+}
+.projectsec{
+    background-color: rgb(20, 20, 20);
+    border-radius: 22px;
+    transition: all 0.4s;
+}
+.projectsec:hover{
+    background-color:  rgb(34, 34, 34);
+}
+.Imageproject{
+    transition: all 0.4s;
+}
+.Imageproject:hover{
+    transform: scale(1.2);
+}
+
+.Imageproject{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Imageproject img{
+    width:37rem;
+    height:auto;
+    border-radius: 9px;
+}
+.Contentproject{
+    margin-left: 3rem;
+    letter-spacing: 1px;
+    color: rgb(209, 209, 209);
+    font-size: 1.2rem;
+}
+.namesec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.namesec a, .namesec button{
+    margin-right: 2rem;
+}
+.Contentproject h3{
+    font-size:2.2rem;
+}
+.headingproject{
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+.headingcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.headingcontainer h2 {
+    background-image: linear-gradient(to right, #cdcaff, #8f89ff, #d0ceff,#8f89ff);
+    -webkit-background-clip: text; /* For WebKit (Safari, Chrome) */
+    background-clip: text; /* Standard property for modern browsers */
+    color: transparent; /* Make the text color transparent */
+}
+.fadein{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+.fadeout{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+.ne{
+    margin-top: 8rem;
+}
+.ne2{
+    margin-top: 5rem;
+}

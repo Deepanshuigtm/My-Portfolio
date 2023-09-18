@@ -1,0 +1,90 @@
+.contact-container{
+    height:100vh
+}
+
+.contact-container h3{
+    font-size: 4.5rem;
+    padding-left: 5rem;
+}
+.contact-sub{
+    display: flex;
+    gap:5%;
+    justify-content: center;
+    padding: 3rem 4%;
+    align-items: center;
+}
+.contactmail{
+    margin-top: 7rem;
+    height:40rem;
+    width:57%;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    padding:3rem 3rem;
+    border-radius: 40px;
+}
+.contactmail h4{
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.contactmail p{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    color: rgb(174, 174, 174);
+}
+.socials{
+    width: 50%;
+}
+.socials h4{
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+}
+.contactsocials{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 4rem;
+}
+.contactsocials div{
+    font-size: 1.7rem;
+    color: rgb(178, 178, 178);
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#linkedin, #mail, #discord, #telegram, #spotify{
+    width:4rem;
+}
+#gmail{
+    width:8rem
+}
+.contactmail a{
+    text-decoration: none;
+    margin-top: 35%;
+    display: flex;
+    align-items: center;
+    color: rgb(183, 183, 183);
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+.contactsocials a{
+    text-decoration: none;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    color: rgb(183, 183, 183);
+    font-size: 1.6rem;
+    transition: all 0.4s;
+}
+.contactsocials div :hover{
+    cursor: pointer;
+    color: #fff;
+    transform: translateY(3px);
+}

@@ -1,0 +1,241 @@
+
+.aboutblock{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+}
+.aboutblock h2{
+    font-size: 3.6rem;
+    margin-left: 5rem;
+}
+.aboutblock p{
+    margin:0 5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+    color: rgb(207, 207, 207);
+}
+.discrip{
+    margin-top: 2rem;
+}
+.titlebox{
+    background-color: rgb(24, 24, 24);
+    width:20rem;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1.6px solid rgb(145, 145, 255);
+    cursor: pointer;
+    flex-direction: column;
+    gap:3rem
+}
+.allblockstitle{
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    row-gap: 9rem;
+    margin-top: 10rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(180, 220, 255);
+}
+.stylesvg{
+    color: #fff;
+    width: 4rem;
+    height: auto;
+}
+.linearredcolor{
+    background-image: linear-gradient(90deg, rgb(189, 238, 255), rgb(20, 196, 220), rgb(197, 242, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titlebox{
+    background: linear-gradient(140deg, rgb(0, 0, 0), rgb(28, 1, 39), rgb(10, 10, 10));
+}
+.abountcontent{
+    background: linear-gradient(180deg ,rgb(0, 0, 0), rgb(6, 16, 39), rgb(16, 16, 16));
+}
+.worksec{
+    height: 200vh;
+    background-image: url(https://uploads-ssl.webflow.com/64c7dd5bd47aab388b54b5ae/64c8db9a51875e9259d3ee09_stars-ok.svg),linear-gradient(transparent 80%,#0b0b15),url(https://uploads-ssl.webflow.com/64c7dd5bd47aab388b54b5ae/64c8c5b75845992f13ad22a0_l2.svg),linear-gradient(#0d0f1a,#0a0a14);
+    background-position: 50%,0 0,50% 26.5%,0 0;
+    background-repeat: no-repeat,repeat,no-repeat,repeat;
+    background-size: 1066px,auto,auto,auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 5rem;
+
+}
+.worksecpara{
+    font-size: 1.2rem;
+    color: rgb(195, 195, 195);
+    margin-top: 10rem;
+}
+.worksec h3{
+    font-size: 3.8rem;
+}
+.workcontainer{
+    margin-top: 7rem;
+    display: grid;
+    gap:10rem;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    padding-right:  4rem;
+}
+.worksecsubs{
+    /* background-image: linear-gradient(90deg,blue,red,rgb(37, 84, 11)); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    /* gap:2rem; */
+    /* margin-bottom: 1rem; */
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+.line{
+    border: 1px solid rgb(255, 204, 204);
+    height: 100rem;
+    width: 0;
+    position: absolute;
+    top:265rem;
+    left:50%
+}
+.fordates{
+    position:absolute;
+    left:54%;
+    top:273rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.fordates2{
+    position:absolute;
+    left:33%;
+    top:308rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.reactlogo{
+    background-color: #fff;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 1rem 1rem;
+    position: absolute;
+    top:305rem;
+    left:47.25%
+}
+.pylogo{
+    background-color: #fff;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 1rem 1rem;
+    position: absolute;
+    top:270rem;
+    left:47.25%
+}
+.ionicon{
+    stroke: #fff;
+    color: #fff;
+}
+.worksecsubs h4{
+    font-size: 1.8rem;
+    position: relative;
+}
+.marg{
+    margin-bottom: 1rem;
+}
+.herosec {
+    position: relative;
+}
+
+.herosec::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Adjust the alpha (last) value to control the darkness */
+    z-index: 1; /* Make sure the overlay is above the video */
+}
+.overname{
+    position: absolute;
+    left:69px;
+    height: 100vh;
+    top:10rem;
+    color: #fff;
+    z-index: 99;
+}
+.overname h3{
+    font-size: 10rem;
+    font-weight: bold;
+}
+.overname div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.ionicon{
+    width: 20rem;
+}
+.overname p{
+    margin-top: 6rem;
+    font-size: 7rem;
+    font-weight: bold;
+}
+.num{
+    height: 100vh;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+.fadeleftin{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.7s;
+}
+.fadeleftout{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+.faderightin{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 0.7s;
+}
+.faderightout{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+#python{
+    width:4rem
+}
