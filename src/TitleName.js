@@ -2,32 +2,37 @@ import profile from "./profile.png";
 import {useEffect} from "react";
 import {useAnimation, motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import LightRays from "./Components/LightRays/LightRays";
 
 
 const contentbox={  
     display: 'flex',
+    flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
     alignItems: 'center',
-    justifyContent:'space-between',
-    paddingRight:'10%',
-    height: '100vh',
+    justifyContent: window.innerWidth <= 768 ? 'center' : 'space-between',
+    padding: window.innerWidth <= 768 ? '2rem 1rem' : '0 10% 0 0',
+    minHeight: '100vh',
     letterSpacing:'1px',
-    backgroundImage:'radial-gradient(circle closest-corner at 180%,#4353ff,rgba(255,255,255,0)),radial-gradient(circle closest-corner at 50% -70%,#7056f5,transparent),radial-gradient(circle closest-corner at 40% -60%,#7056f5,transparent),radial-gradient(circle farthest-side at 190% -130%,#7056f5,transparent)'
+    position: 'relative',
+    width: '100vw',
 }
 
 const overviewcontent ={
     display : 'grid',
     gridTemplateColumns: '1fr',
-    width: '65%',
-    paddingLeft: '5rem',
+    width: window.innerWidth <= 768 ? '100%' : '65%',
+    paddingLeft: window.innerWidth <= 768 ? '0' : '5rem',
     letterSpacing: '1px',
-    lineHeight: '2'
+    lineHeight: '2',
+    textAlign: window.innerWidth <= 768 ? 'center' : 'left'
 }
 
 const imageprofile = {
     borderRadius: '10px',
-    border:'10px polid #000',
-    width:'20rem',
+    border:'10px solid #000',
+    width: window.innerWidth <= 768 ? '12rem' : '20rem',
     height:'auto',
+    margin: window.innerWidth <= 768 ? '2rem auto' : '0',
 }
 const paraname = {
     margin:'0',
@@ -113,19 +118,20 @@ export default function TittleName(){
     return (
         <div id="home" style={contentbox}>
             <motion.div 
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={imageVariants}
-            onViewportEnter={handleInView} // Callback for entering viewport
-            onViewportLeave={handleOutOfView}
-            style={overviewcontent}>
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={imageVariants}
+                onViewportEnter={handleInView}
+                onViewportLeave={handleOutOfView}
+                style={{...overviewcontent, position: 'relative', zIndex: 1}}
+            >
                 <div><p style={paraname}>Deepanshu Singh</p></div>
-                <h2 style={headline}>Full Stack Developer</h2>
-                <p style={contentpara}>I bring diverse skills in full-stack development and Python Automation. My dedication to pushing technological boundaries and helping businesses thrive is unwavering. Whether it's collaborating with industry leaders, my goal is to empower them with cutting-edge technology and captivating user interfaces.</p>
+                <h2 style={{...headline, fontSize: window.innerWidth <= 768 ? '1.5rem' : '2.5rem'}}>Full Stack Developer</h2>
+                <p style={{...contentpara, fontSize: window.innerWidth <= 768 ? '1rem' : '1.2rem'}}>I bring diverse skills in full-stack development and Python Automation. My dedication to pushing technological boundaries and helping businesses thrive is unwavering. Whether it's collaborating with industry leaders, my goal is to empower them with cutting-edge technology and captivating user interfaces.</p>
             </motion.div>
-            <div>
-                <img style={imageprofile} alt="profile" src={profile}></img>
+            <div style={{position: 'relative', zIndex: 1}}>
+                <img style={imageprofile} alt="profile" src={profile} />
             </div>
         </div>
     )
