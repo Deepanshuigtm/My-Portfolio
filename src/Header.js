@@ -84,20 +84,7 @@ export default function Headers() {
       />
 
       {/* Resume Button */}
-      {/* <button
-        style={{
-          padding: isMobile ? "0.5rem 1rem" : "0.7rem 1.5rem",
-          borderRadius: "32px",
-          border: "2px solid #000",
-          color: "#000",
-          fontSize: isMobile ? "1rem" : "1.4rem",
-          backgroundColor: "#fff",
-          cursor: "pointer",
-          transition: "all 0.3s",
-        }}
-      >
-        Resume
-      </button> */}
+      
     </div>
   );
 }

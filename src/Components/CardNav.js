@@ -20,12 +20,11 @@ const CardNav = ({
   const navRef = useRef(null);
   const cardsRef = useRef([]);
   const tlRef = useRef(null);
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
   const calculateHeight = () => {
     const navEl = navRef.current;
     if (!navEl) return 260;
-
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
     if (isMobile) {
       const contentEl = navEl.querySelector(".card-nav-content");
       if (contentEl) {
@@ -137,6 +136,15 @@ const CardNav = ({
     if (el) cardsRef.current[i] = el;
   };
 
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/deepanshu_resume_29_may.pdf";
+    link.download = "deepanshu_resume_29_may.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={`card-nav-container ${className}`}>
       <nav
@@ -162,11 +170,19 @@ const CardNav = ({
           </div>
 
           <button
-            type="button"
-            className="card-nav-cta-button"
-            style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+            onClick={handleResumeDownload}
+            style={{
+              padding: isMobile ? "0.5rem 1rem" : "0.7rem 1.5rem",
+              borderRadius: "32px",
+              border: "2px solid #000",
+              color: "#000",
+              fontSize: isMobile ? "1rem" : "1.4rem",
+              backgroundColor: "#fff",
+              cursor: "pointer",
+              transition: "all 0.3s",
+            }}
           >
-            Get Started
+            Resume
           </button>
         </div>
 

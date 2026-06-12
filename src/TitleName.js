@@ -128,7 +128,13 @@ export default function TittleName(){
             >
                 <div><p style={paraname}>Deepanshu Singh</p></div>
                 <h2 style={{...headline, fontSize: window.innerWidth <= 768 ? '1.5rem' : '2.5rem'}}>Full Stack Developer</h2>
-                <p style={{...contentpara, fontSize: window.innerWidth <= 768 ? '1rem' : '1.2rem'}}>I bring diverse skills in full-stack development and Python Automation. My dedication to pushing technological boundaries and helping businesses thrive is unwavering. Whether it's collaborating with industry leaders, my goal is to empower them with cutting-edge technology and captivating user interfaces.</p>
+                <p style={{...contentpara, fontSize: window.innerWidth <= 768 ? '1rem' : '1.2rem'}}>Self-directed Mobile App Developer with a Bachelor's degree in Computer Science and extensive
+experience shipping high-quality applications for iOS and Android. Specialized in cross-platform (Flutter)
+and native frameworks (Swift, Kotlin). Highly proficient in integrating native device features, REST APIs,
+and monetization models (in-app purchases, subscriptions). Proven ability to refine and evaluate AI-
+generated mobile code for strict correctness, battery use, and performance. Adept at managing offline
+state, local caching, and navigating distribution platforms like TestFlight and Google Play Console
+independently for freelance and enterprise projects.</p>
             </motion.div>
             <div style={{position: 'relative', zIndex: 1}}>
                 <img style={imageprofile} alt="profile" src={profile} />
